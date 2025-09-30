@@ -30,6 +30,7 @@ router.post('/register',async (req,res) => {
 
 //login
 router.post('/login',async (req,res) => {
+     console.log("Request body:", req.body); // بررسی اینکه دیتا میاد یا نه
     try{
         const {email,password} = req.body;
 
